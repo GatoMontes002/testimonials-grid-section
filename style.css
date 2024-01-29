@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --moderateViolet: hsl(263, 55%, 52%);
+  --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --veryDarkBlackishBlue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(0, 0%, 81%);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+.contenedorGrilla {
+  display: flex;
+  justify-content: center;
+  background-color: var(--lightGrayishBlue);
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+  width: 90%;
+}
+
+.gris {
+  background-color: var(--veryDarkGrayishBlue);
+}
+.grisoscuro {
+  background-color: var(--lightGray);
+}
+
+.uno {
+  background-color: var(--moderateViolet);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+}
+.dos {
+  background-color: var(--veryDarkGrayishBlue);
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+}
+.tres {
+  background-color: #fff;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+}
+.cuatro {
+  background-color: var(--veryDarkBlackishBlue);
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+}
+.cinco {
+  background-color: var(--white);
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  border-radius: 12px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.fontwhite {
+  color: var(--white);
+}
+.fontblack {
+  color: var(--veryDarkBlackishBlue);
+}
+.fontblackLigth {
+  color: var(--veryDarkGrayishBlue);
+}
+.fontgris {
+  color: var(--lightGray);
+}
+.letratitulo {
+  font-size: 1.5rem;
+}
+.fuentecargo {
+  font-size: 0.8rem;
+}
+.encabezado {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.foto {
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 975px) {
+  .grilla {
+    display: grid;
+    gap: 16px;
+    width: 90%;
+  }
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "runo runo rdos"
+      "rtres rcuatro rcuatro"
+      "rcinco rcinco rcinco";
+    gap: 16px;
+    width: 90%;
+  }
+  .uno {
+    grid-area: runo;
+  }
+  .dos {
+    grid-area: rdos;
+  }
+  .tres {
+    grid-area: rtres;
+  }
+  .cuatro {
+    grid-area: rcuatro;
+  }
+  .cinco {
+    grid-area: rcinco;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grilla {
+    display: grid;
+    gap: 16px;
+    width: 90%;
+  }
+  .grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "runo"
+      "rdos"
+      "rtres"
+      "rcuatro"
+      "rcinco";
+    gap: 16px;
+    width: 90%;
+  }
+  .uno {
+    grid-area: runo;
+  }
+  .dos {
+    grid-area: rdos;
+  }
+  .tres {
+    grid-area: rtres;
+  }
+  .cuatro {
+    grid-area: rcuatro;
+  }
+  .cinco {
+    grid-area: rcinco;
+  }
+}
