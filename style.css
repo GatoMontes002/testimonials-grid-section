@@ -93,10 +93,12 @@
 .fuentecargo {
   font-size: 0.8rem;
 }
+.nombreycargo {
+  padding-left: 15px;
+}
 .encabezado {
   display: flex;
   align-items: center;
-  gap: 15px;
 }
 .foto {
   border-radius: 50%;
@@ -141,9 +143,6 @@
     display: grid;
     gap: 16px;
     width: 90%;
-  }
-  .encabezado{
-    gap: 30px;
   }
   .grilla {
     display: grid;
