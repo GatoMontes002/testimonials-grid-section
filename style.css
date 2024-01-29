@@ -40,6 +40,9 @@
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top 10px right 100px;
 }
 .dos {
   background-color: var(--veryDarkGrayishBlue);
@@ -93,15 +96,13 @@
 .fuentecargo {
   font-size: 0.8rem;
 }
-.nombreycargo {
-  padding-left: 1rem;
-}
 .encabezado {
   display: flex;
   align-items: center;
 }
 .foto {
   border-radius: 50%;
+  margin-right: 1rem;
 }
 
 @media only screen and (max-width: 975px) {
