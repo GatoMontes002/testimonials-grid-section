@@ -142,6 +142,9 @@
     gap: 16px;
     width: 90%;
   }
+  .encabezado{
+    gap: 30px;
+  }
   .grilla {
     display: grid;
     grid-template-columns: 1fr;
