@@ -16,8 +16,7 @@
 .contenedorGrilla {
   display: flex;
   justify-content: center;
-  /*background-color: var(--lightGrayishBlue);*/
-  background-color: green;
+  background-color: var(--lightGrayishBlue);
   padding-top: 150px;
   padding-bottom: 150px;
 }
